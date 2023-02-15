@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Rubik", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%);
+  color: #ffffff;
+
+  display: grid;
+  place-content: center;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  opacity: 64%;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+#passaport {
+  color: black;
+  margin-top: 2rem;
+}
+
+#flight {
+  background: #ffffff;
+  padding: 2.4rem 3.2rem;
+  border-top-right-radius: 2.4rem;
+  border-top-left-radius: 2.4rem;
+
+  --mask: radial-gradient(15px at 15px 100%, #0000 98%, #000) -15px;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+#flight .top {
+  display: flex;
+  justify-content: space-between;
+  gap: 11.9rem;
+}
+
+.top .info-date span {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#flight .body-voo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.4rem;
+}
+.body-voo .city {
+  font-size: 4rem;
+  font-weight: 500;
+}
+.body-voo .leave {
+  margin-right: 1.65rem;
+}
+.body-voo .landing {
+  display: grid;
+  justify-items: flex-end;
+}
+
+.body-voo .info-hour {
+  font-size: 1.6rem;
+  font-weight: 400;
+  opacity: 80%;
+}
+
+#passenger {
+  background: #ffffff;
+  padding: 2.4rem 3.2rem;
+  display: flex;
+  justify-content: space-between;
+
+  border-top: 1px dashed gray;
+  border-bottom: 1px dashed gray;
+
+  --mask: radial-gradient(15px at 15px 15px, #0000 98%, #000) -15px -15px;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+#passenger .seat {
+  display: grid;
+  justify-items: flex-end;
+}
+
+#boarding {
+  background: #ffffff;
+  padding: 2.4rem 3.2rem;
+  border-bottom-left-radius: 2.4rem;
+  border-bottom-right-radius: 2.4rem;
+
+  --mask: radial-gradient(15px at 15px 0, #0000 98%, #000) -15px;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.info-boarding {
+  width: 9.5rem;
+  display: grid;
+  gap: 1.6rem;
+}
+.hour-boarding {
+  padding: 0.8rem 0.4rem;
+  background: #633bbc;
+  color: #ffffff;
+  border-radius: 0.8rem;
+  text-align: center;
+  width: 5.4rem;
+}
+
+.code {
+  display: grid;
+  justify-items: center;
+}
+
+.info-code {
+  font-size: 1.4rem;
+  font-weight: 400;
+  opacity: 64%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.info-close {
+  margin-top: 2.4rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.4rem;
+  width: 27rem;
+  margin-top: 2rem;
+}
