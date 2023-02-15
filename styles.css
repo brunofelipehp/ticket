@@ -14,8 +14,9 @@
 body {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%);
+  background: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%) no-repeat;
   color: #ffffff;
+  letter-spacing: -0.02em;
 
   display: grid;
   place-content: center;
@@ -26,6 +27,11 @@ h1 {
   font-size: 20px;
   font-weight: 500;
   text-align: center;
+}
+
+section {
+  background: #ffffff;
+  padding: 2.4rem 3.2rem;
 }
 
 span {
@@ -45,12 +51,10 @@ p {
 }
 
 #flight {
-  background: #ffffff;
-  padding: 2.4rem 3.2rem;
   border-top-right-radius: 2.4rem;
   border-top-left-radius: 2.4rem;
 
-  --mask: radial-gradient(15px at 15px 100%, #0000 98%, #000) -15px;
+  --mask: radial-gradient(12px at 12px 100%, #0000 98%, #000) -12px;
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
@@ -89,15 +93,13 @@ p {
 }
 
 #passenger {
-  background: #ffffff;
-  padding: 2.4rem 3.2rem;
   display: flex;
   justify-content: space-between;
 
-  border-top: 1px dashed gray;
-  border-bottom: 1px dashed gray;
+  border-top: 1px dashed rgba(0, 0, 0, 0.32);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.32);
 
-  --mask: radial-gradient(15px at 15px 15px, #0000 98%, #000) -15px -15px;
+  --mask: radial-gradient(12px at 12px 12px, #0000 98%, #000) -12px -12px;
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
@@ -108,12 +110,10 @@ p {
 }
 
 #boarding {
-  background: #ffffff;
-  padding: 2.4rem 3.2rem;
   border-bottom-left-radius: 2.4rem;
   border-bottom-right-radius: 2.4rem;
 
-  --mask: radial-gradient(15px at 15px 0, #0000 98%, #000) -15px;
+  --mask: radial-gradient(12px at 12px 0, #0000 98%, #000) -12px;
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
@@ -121,6 +121,7 @@ p {
 .info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 0.8rem;
 }
 
@@ -130,7 +131,7 @@ p {
   gap: 1.6rem;
 }
 .hour-boarding {
-  padding: 0.8rem 0.4rem;
+  padding: 0.4rem 0.8rem;
   background: #633bbc;
   color: #ffffff;
   border-radius: 0.8rem;
@@ -163,11 +164,10 @@ p {
 }
 
 .alert {
-  display: flex;
-  justify-content: center;
   text-align: center;
   font-weight: 400;
   font-size: 1.4rem;
   width: 27rem;
-  margin-top: 2rem;
+  margin: 2rem auto;
+  opacity: 0.64;
 }
